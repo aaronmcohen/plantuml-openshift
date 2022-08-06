@@ -1,0 +1,18 @@
+' Based on 
+' - https://cncf-branding.netlify.app/projects/prometheus
+!define PROMETHEUS_COLOR #e95224
+!define PROMETHEUS_BG_COLOR #FFFFFF
+!define PROMETHEUS_BORDER_COLOR #3C7FC0
+
+
+!definelong PrometheusEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor PROMETHEUS_BG_COLOR
+    BorderColor PROMETHEUS_BORDER_COLOR
+}
+!enddefinelong
+
+!definelong PrometheusEntity(alias, label, sprite, stereo)
+PrometheusEntityColoring(stereo)
+rectangle "<color:PROMETHEUS_COLOR><sprite*0.50></color>label"  <<stereo>> as alias
+!enddefinelong

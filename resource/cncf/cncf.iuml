@@ -1,0 +1,2 @@
+!include ./kubernetes/all.iuml
+!include ./prometheus/prometheus.iuml

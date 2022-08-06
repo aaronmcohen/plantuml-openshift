@@ -1,0 +1,8 @@
+' Based on https://github.com/kubernetes/community/tree/master/icons
+'
+!include ./api.iuml
+!include ./c-m.iuml
+!include ./c-c-m.iuml
+!include ./sched.iuml
+!include ./kublet.iuml
+!include ./k-proxy.iuml

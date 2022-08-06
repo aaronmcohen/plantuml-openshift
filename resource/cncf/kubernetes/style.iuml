@@ -1,0 +1,19 @@
+' Based on 
+' - https://cncf-branding.netlify.app/projects/kubernetes/
+' - https://github.com/dcasati/kubernetes-PlantUML/blob/master/dist/kubernetes_Common.puml#L1
+!define KUBERNETES_COLOR #326ce5
+!define KUBERNETES_BG_COLOR #FFFFFF
+!define KUBERNETES_BORDER_COLOR #3C7FC0
+
+
+!definelong KubernetesEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor KUBERNETES_BG_COLOR
+    BorderColor KUBERNETES_BORDER_COLOR
+}
+!enddefinelong
+
+!definelong KubernetesEntity(alias, label,sprite, stereo)
+KubernetesEntityColoring(stereo)
+rectangle "<color:KUBERNETES_COLOR><sprite*0.50></color>label"  <<stereo>> as alias
+!enddefinelong

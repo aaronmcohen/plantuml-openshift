@@ -1,0 +1,23 @@
+@startuml
+!include ./resource/all.iuml
+package "Cloud Native Computing Foundation Projects"{
+  package "Kubernetes" {
+    Kubernetes(kubernetes, Kebernetes)
+    package "Control Plane" {
+      KubeAPIServer(kubeAPIServer, KubeAPIServer)
+      CloudControlManager(cloudControlManager,CloudControlManager)
+      ControllerManager(controllerManager,ControllerManager)
+      KubeProxy(kubeProxy,KubeProxy)
+      Kublet(kublet,Kublet)
+      Scheduler(scheduler,Scheduler)
+    }
+    package "infrastructure" {
+      KubeControlPlane(kubeControlPlane,KubeControlPlane)
+      ETCD(etcd, ETCD)
+      KubeMaster(kubeMaster,KubeMaster)
+      KubeNode(kubeNode,KubeNode)
+    }
+  }
+  Prometheus(prometheus, Prometheus)
+}
+@enduml

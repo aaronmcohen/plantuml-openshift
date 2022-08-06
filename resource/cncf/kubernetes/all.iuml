@@ -1,0 +1,3 @@
+!include ./kubernetes.iuml
+!include ./control_plane_components/all.iuml
+!include ./infrastructure_components/all.iuml

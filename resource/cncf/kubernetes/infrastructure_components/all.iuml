@@ -1,0 +1,4 @@
+!include ./control-plane.iuml
+!include ./etcd.iuml
+!include ./node.iuml
+!include ./master.iuml
